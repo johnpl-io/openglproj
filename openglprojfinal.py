@@ -116,18 +116,18 @@ def stringtoarr(string):
         
 
     
-choice = input("What would you like 1. Lorenz 2. Rossler 3. Four-Wing ")
+choice = input("What would you like 1. Lorenz 2. Rössler 3. Four-Wing ")
 if choice == "1":
-    lorenzc = input("Would you like 1. normal 2. change inital conditions and color 3. completey random? ")
+    lorenzc = input("Would you like 1. normal 2. change inital conditions and color or 3. random? ")
     if lorenzc== "2":
         lorenz2 = input("What do you want sigma, rho, and beta to be? Please input the number as follows: a,b,c ")
         lorenzc1 = input("What colors would you like? The Attractor can be colored four times. enter as r,g,b \n color 1: ")
         lorenzc1 = stringtoarr(lorenzc1)
-        lorenzc2 = input("color 2:")
+        lorenzc2 = input("color 2: ")
         lorenzc2 = stringtoarr(lorenzc2)
-        lorenzc3 = input("color 3:")
+        lorenzc3 = input("color 3: ")
         lorenzc3 = stringtoarr(lorenzc3)
-        lorenzc4 = input("color 4:")
+        lorenzc4 = input("color 4: ")
         lorenzc4 = stringtoarr(lorenzc4)
         lorenzcolor = [[int(lorenzc1[0])/255, int(lorenzc1[1])/255, int(lorenzc1[2])/255], [int(lorenzc2[0])/255, int(lorenzc2[1])/255, int(lorenzc2[2])/255], [int(lorenzc3[0])/255, int(lorenzc3[1])/255, int(lorenzc3[2])/255], [int(lorenzc4[0])/255, int(lorenzc4[1])/255, int(lorenzc4[2])/255]]
         lorenzuser = stringtoarr(lorenz2)
@@ -136,7 +136,7 @@ if choice == "1":
         lvalue2 = random.randint(4, 30)
         randcolorsl = [randcol[random.randint(0,8)],randcol[random.randint(0,8)],randcol[random.randint(0,8)] ]
 if choice == "2":
-    rosslerc = input("Would you like 1. normal 2. change inital conditions and color 3. completey random? ")
+    rosslerc = input("Would you like 1. normal 2. change inital conditions and color or 3. random? ")
     if rosslerc == "2":
         rosslerc2 = input("What do you want a, b, c to be. Please input the numbers as follows: a,b,c")
         rosslerc3 = input("What colors would you like? The attractor can be colored four times. enter as r,g,b \n color 1:")
@@ -154,7 +154,7 @@ if choice == "2":
         rvalue2 = round(random.uniform(5, 20), 2)
         randcolorsr = [randcol[random.randint(0,8)],randcol[random.randint(0,8)],randcol[random.randint(0,8)] ]
 if choice == "3":
-    fourwingc = input("Would you like 1. normal 2. change inital conditions and color 3. completey random? ")
+    fourwingc = input("Would you like 1. normal 2. change inital conditions and color or 3. random? ")
     if fourwingc == "2":
         fourwingc1 = input("What do you want a, b, c to be. Please input the numbers as follows: a,b,c ")
         fourwingc2 = input("What colors would you like? The attractor can be colored four times. enter as r,g,b \n color 1: ")
