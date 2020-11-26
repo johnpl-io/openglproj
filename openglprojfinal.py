@@ -112,39 +112,11 @@ def fourwing(a = 0.3, b = 0.01, c = -0.4, colors = colors):
 def stringtoarr(string): 
     li = list(string.split(",")) 
     return li
-def custom(one, two, three, colors):
-    x = 0.01
-    y = 0
-    z = 0
-    # a = sigma
-    # b = rho
-    # c = beta
-    count = 0
-    dt = 0.01
-    dx = 0
-    dy = 0
-    dz = 0
-    while(count !=10000):        
-        if(count >= 7500):
-            glColor3d(colors[2][0], colors[2][1],colors[2][2])
-        elif(count >= 5000):
-            glColor3d(colors[1][0], colors[1][1], colors[1][2])
-        else:
-            glColor3d(colors[0][0],colors[0][1], colors[0][2])
-        dx = one * dt
-        dy = two * dt
-        dz = three * dt
-        
-        glVertex3d(x,y,z)
-        
-        x = x + dx
-        y = y + dy
-        z = z + dz
-        count+=1 
+
         
 
     
-choice = input("What would you like 1. Lorenz 2. Rossler 3. Four-Wing 4. Thomas ")
+choice = input("What would you like 1. Lorenz 2. Rossler 3. Four-Wing ")
 if choice == "1":
     lorenzc = input("Would you like 1. normal 2. change inital conditions and color 3. completey random? ")
     if lorenzc== "2":
@@ -205,7 +177,7 @@ if choice == "3":
 def main():
     #initialize pygame
     pygame.init()
-   
+    pygame.display.set_caption('Attractor Generator')
 
 
     
@@ -275,8 +247,7 @@ def main():
                 fourwing(float(fourwinguser[0]),float(fourwinguser[1]), float(fourwinguser[2]) ,fourwingcolor )
             if fourwingc == "3":
                 fourwing(a = fvalues1, b = 0.01, c = fvalues, colors = randcolorsf)
-        if choice == "4":
-            custom((-(y+z)),(x + 0.2*y), (0.2 + z*(x-5.7)), colors)
+
 
 
 
