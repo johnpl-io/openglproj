@@ -121,7 +121,7 @@ if choice == "1":
     lorenzc = input("Would you like 1. normal 2. change inital conditions and color or 3. random? ")
     if lorenzc== "2":
         lorenz2 = input("What do you want sigma, rho, and beta to be? Please input the number as follows: a,b,c ")
-        lorenzc1 = input("What colors would you like? The Attractor can be colored four times. enter as r,g,b \n color 1: ")
+        lorenzc1 = input("What colors would you like? The attractor can be colored four times. enter as r,g,b \ncolor 1: ")
         lorenzc1 = stringtoarr(lorenzc1)
         lorenzc2 = input("color 2: ")
         lorenzc2 = stringtoarr(lorenzc2)
@@ -138,8 +138,8 @@ if choice == "1":
 if choice == "2":
     rosslerc = input("Would you like 1. normal 2. change inital conditions and color or 3. random? ")
     if rosslerc == "2":
-        rosslerc2 = input("What do you want a, b, c to be. Please input the numbers as follows: a,b,c")
-        rosslerc3 = input("What colors would you like? The attractor can be colored four times. enter as r,g,b \n color 1:")
+        rosslerc2 = input("What do you want a, b, c to be. Please input the numbers as follows: a,b,c ")
+        rosslerc3 = input("What colors would you like? The attractor can be colored four times. enter as r,g,b \ncolor 1:")
         rosslerc3 = stringtoarr(rosslerc3)
         rosslerc4 = input("color 2: ")
         rosslerc4 = stringtoarr(rosslerc4)
@@ -157,7 +157,7 @@ if choice == "3":
     fourwingc = input("Would you like 1. normal 2. change inital conditions and color or 3. random? ")
     if fourwingc == "2":
         fourwingc1 = input("What do you want a, b, c to be. Please input the numbers as follows: a,b,c ")
-        fourwingc2 = input("What colors would you like? The attractor can be colored four times. enter as r,g,b \n color 1: ")
+        fourwingc2 = input("What colors would you like? The attractor can be colored four times. enter as r,g,b \ncolor 1: ")
         fourwingc2 = stringtoarr(fourwingc2)
         fourwingc3 = input("color 2: ")
         fourwingc3 = stringtoarr(fourwingc3)
