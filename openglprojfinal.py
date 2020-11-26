@@ -1,3 +1,6 @@
+import os 
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
+print("Welcome to the Attractor Generator! The readme.txt explains how to use the program.\n")
 import pygame
 from pygame.locals import*
 import time
@@ -22,7 +25,7 @@ def rossler(a = 0.2, b = 0.2, c = 5.7, colors = colors):
     x = 0.01
     y = 0
     z = 0
-    #parameters of lorenz attractor
+    #parameters of rossler attractor
     # a, b, and c are the variables that create a chaotic attractor
     
     dt = 0.01
@@ -84,9 +87,6 @@ def fourwing(a = 0.3, b = 0.01, c = -0.4, colors = colors):
     x = 0.01
     y = 0
     z = 0
-    # a = sigma
-    # b = rho
-    # c = beta
     count = 0
     dt = 0.01
     dx = 0
@@ -175,7 +175,6 @@ if choice == "3":
 
   
 def main():
-    #initialize pygame
     pygame.init()
     pygame.display.set_caption('Attractor Generator')
 
