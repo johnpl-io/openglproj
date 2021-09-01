@@ -1,4 +1,4 @@
-FWelcome to the Attractor Generator program that was created using OpenGL. 
+Welcome to the Attractor Generator program that was created using OpenGL. 
 All of the files needed to run the program are in the zip file (except for the python file). 
 The program is able to create normal variations, user controlled, and random variations of  three chaotic attractors. 
 The attractors included in the program are the Lorenz, Rössler, and Four-Wing attractors. The program accepts inputs from a user and then will 
